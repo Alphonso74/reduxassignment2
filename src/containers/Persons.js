@@ -10,7 +10,9 @@ class Persons extends Component {
         return (
             <div>
                 <AddPerson personAdded={this.props.onAddPerson} />
+
                 {this.props.storedPersons.map(person => (
+
                     <Person
                         key={person.id}
                         name={person.name}
